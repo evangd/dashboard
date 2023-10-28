@@ -134,10 +134,16 @@ label svg {
 
 .side-menu {
     grid-template-columns: 1fr 4fr;
+    align-items: center;
 }
 
 .side-menu p:nth-child(odd) {
     text-align: center;
+}
+
+#sidebar svg {
+    fill: white;
+    justify-self: center;
 }
 
 /* main */
