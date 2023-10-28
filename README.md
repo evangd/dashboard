@@ -1,6 +1,6 @@
-# Admin Dashboard
+# Sithnet
 
-Well it is what it says it is, only it doesn't do anything.
+Darth Vader needed a dashboard to organize all of his Death Star-related activities, so I made him one.
 
 I once again entreat any and all viewers to extend an offer of employment to yours truly.
 
