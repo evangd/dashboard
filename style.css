@@ -3,6 +3,11 @@
     font-size: 16px;
 }
 
+::selection {
+    background-color: #b91c1c;
+    color: white;
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -137,13 +142,31 @@ label svg {
     align-items: center;
 }
 
-.side-menu p:nth-child(odd) {
-    text-align: center;
-}
-
 #sidebar svg {
     fill: white;
     justify-self: center;
+}
+
+.side-menu p {
+    width: max-content;
+}
+
+.side-menu p:hover {
+    cursor: pointer;
+}
+
+.side-menu p::after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: red;
+    
+    transition: width 0.3s;
+}
+
+.side-menu p:hover::after, .side-menu svg:hover + p::after {
+    width: 100%;
 }
 
 /* main */
