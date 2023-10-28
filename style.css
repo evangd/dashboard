@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'starwars';
+    src: url('Starjedi.ttf') format('truetype');
+}
+
 :root {
     font-family: 'Space Grotesk', monospace;
     font-size: 16px;
@@ -17,6 +22,11 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto 4fr;
+}
+
+h1 {
+    font-family: 'starwars';
+    margin-bottom: 0;
 }
 
 /* header */
@@ -135,6 +145,10 @@ label svg {
 
 #sidebar div:first-child {
     justify-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #sidebar div {
